@@ -20,7 +20,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyze_resume/", {
+      const response = await fetch("https://ai-resume-agent-backend.onrender.com/", {
         method: "POST",
         body: formData,
       });
